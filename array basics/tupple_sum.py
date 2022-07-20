@@ -56,13 +56,3 @@ class TuppleSum:
 
 
 
-x = [3, 1, 2, 8, 4, 6, 7]
-
-tupples = TuppleSum(x)
-
-print(tupples.a)
-
-# print(tupples.by_exhaustive_search(sum = 10))
-# print(tupples.by_sorting(sum = 10))
-print(tupples.by_dictionary(sum = 10))
-print(tupples.a)
