@@ -1,6 +1,8 @@
-# terrorists = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# 4 July 2022
 
-# n = len(terrorists)
+terrorists = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+n = len(terrorists)
 
 # def target_of(k):
 #     for i in range(k + 1, n):
