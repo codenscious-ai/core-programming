@@ -18,7 +18,27 @@ class Sort:
         return arr
 
     def selection(self):
-        pass
+        arr = self.arr.copy()
+        n = len(arr)
+
+        sorted_till = -1
+
+        while sorted_till < n - 1:
+            index_of_smallest = sorted_till + 1
+            for i in range(index_of_smallest + 1, n):
+                if arr[i] < arr[index_of_smallest]:
+                    index_of_smallest = i
+
+            temp = arr[index_of_smallest]
+            arr[index_of_smallest] = arr[sorted_till + 1]
+            arr[sorted_till + 1] = temp
+
+            sorted_till += 1
+
+        return arr
+
+
+
 
     def insertion(self):
         pass
@@ -32,11 +52,9 @@ class Sort:
     def radix(self):
         pass
 
-
 a = [13, 3, 6, 0, -1, 50, 20, 31]
 
-
 s = Sort(arr = a)
-sorted_arr = s.bubble()
+sorted_arr = s.selection()
 
 print(sorted_arr)
